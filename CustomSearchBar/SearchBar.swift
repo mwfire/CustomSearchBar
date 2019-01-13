@@ -9,12 +9,24 @@
 import UIKit
 
 final class SearchBar: UITextField {
+
+    /// Sets the placeholder color
+    @objc dynamic var placeholderColor: UIColor = .lightGray {
+        didSet { setPlaceholder(text: placeholder) }
+    }
     
-    override func didMoveToSuperview() {
-        super.didMoveToSuperview()
+    /// MARK: - Initializers
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         setup()
     }
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+
     private func setup() {
 
         placeholder = "Search"
@@ -31,11 +43,44 @@ final class SearchBar: UITextField {
         iconView.contentMode = .scaleAspectFit
         leftView = iconView
         leftViewMode = .always
+        
+        // General appearance
+        font = UIFont.Avenir.medium()
+        tintColor = .lightGray
+        textColor = .mediumGray
+        backgroundColor = .white
+        
+        // Borders
+        borderColor = .lighterGray
+        borderWidth = 1
+        cornerRadius = 4
+        
+        // Shadow
+        shadowColor = .lightGray
+        shadowRadius = 8
+        shadowOpacity = 0.2
+        shadowPosition = CGSize(width: 0, height: 0)
     }
     
+    // MARK: - Placeholder
+    
+    override var placeholder: String? {
+        get { return attributedPlaceholder?.string }
+        set { setPlaceholder(text: newValue) }
+    }
+    
+    private func setPlaceholder(text: String?) {
+        guard let placeholder = text else {
+            attributedPlaceholder = nil
+            return
+        }
+        let attributes = [NSAttributedString.Key.foregroundColor: placeholderColor]
+        attributedPlaceholder = NSAttributedString(string: placeholder, attributes: attributes)
+    }
+  
     // MARK: - Rect overrides
     
-    private lazy var rectInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+    private lazy var rectInsets = UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 8)
     
     override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
         var rect = super.leftViewRect(forBounds: bounds)

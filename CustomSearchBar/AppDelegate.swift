@@ -14,26 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
-        let proxy = SearchBar.appearance()
-        
-        // Generic
-        proxy.font = UIFont.Avenir.medium()
-        proxy.tintColor = .lightGray
-        proxy.textColor = .mediumGray
-        proxy.backgroundColor = .white
-        
-        // Borders
-        proxy.borderColor = .lighterGray
-        proxy.borderWidth = 1
-        proxy.cornerRadius = 4
-        
-        // Shadow
-        proxy.shadowColor = .lightGray
-        proxy.shadowRadius = 8
-        proxy.shadowOpacity = 0.2
-        proxy.shadowPosition = CGSize(width: 0, height: 0)
+
+//        let proxy = SearchBar.appearance()
+//        proxy.font = UIFont.systemFont(ofSize: 16)
+//        proxy.tintColor = .lightGray
+//        proxy.textColor = .lightGray
+//        proxy.placeholderColor = .green
+//        proxy.backgroundColor = .darkGray
 
         return true
     }
