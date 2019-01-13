@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE7134BD21EB743D007D7F51 /* UIView+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7134BC21EB743D007D7F51 /* UIView+Appearance.swift */; };
 		EECC6BCC21E0B40800A6ACEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC6BCB21E0B40800A6ACEB /* AppDelegate.swift */; };
 		EECC6BCE21E0B40800A6ACEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC6BCD21E0B40800A6ACEB /* ViewController.swift */; };
 		EECC6BD121E0B40800A6ACEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECC6BCF21E0B40800A6ACEB /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE7134BC21EB743D007D7F51 /* UIView+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Appearance.swift"; sourceTree = "<group>"; };
 		EECC6BC821E0B40800A6ACEB /* CustomSearchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomSearchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECC6BCB21E0B40800A6ACEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECC6BCD21E0B40800A6ACEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				EECC6BD421E0B40B00A6ACEB /* LaunchScreen.storyboard */,
 				EECC6BD721E0B40B00A6ACEB /* Info.plist */,
 				EECC6BDD21E0B44500A6ACEB /* SearchBar.swift */,
+				EE7134BC21EB743D007D7F51 /* UIView+Appearance.swift */,
 			);
 			path = CustomSearchBar;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				EECC6BCE21E0B40800A6ACEB /* ViewController.swift in Sources */,
 				EECC6BCC21E0B40800A6ACEB /* AppDelegate.swift in Sources */,
+				EE7134BD21EB743D007D7F51 /* UIView+Appearance.swift in Sources */,
 				EECC6BDE21E0B44500A6ACEB /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
