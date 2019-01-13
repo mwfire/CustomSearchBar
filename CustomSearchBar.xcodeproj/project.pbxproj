@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EE7134BD21EB743D007D7F51 /* UIView+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7134BC21EB743D007D7F51 /* UIView+Appearance.swift */; };
+		EE7134BF21EB956E007D7F51 /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7134BE21EB956E007D7F51 /* UIFont+Custom.swift */; };
+		EE7134C121EB9590007D7F51 /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7134C021EB9590007D7F51 /* UIColor+Custom.swift */; };
 		EECC6BCC21E0B40800A6ACEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC6BCB21E0B40800A6ACEB /* AppDelegate.swift */; };
 		EECC6BCE21E0B40800A6ACEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECC6BCD21E0B40800A6ACEB /* ViewController.swift */; };
 		EECC6BD121E0B40800A6ACEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECC6BCF21E0B40800A6ACEB /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		EE7134BC21EB743D007D7F51 /* UIView+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Appearance.swift"; sourceTree = "<group>"; };
+		EE7134BE21EB956E007D7F51 /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
+		EE7134C021EB9590007D7F51 /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
 		EECC6BC821E0B40800A6ACEB /* CustomSearchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomSearchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECC6BCB21E0B40800A6ACEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECC6BCD21E0B40800A6ACEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				EECC6BD721E0B40B00A6ACEB /* Info.plist */,
 				EECC6BDD21E0B44500A6ACEB /* SearchBar.swift */,
 				EE7134BC21EB743D007D7F51 /* UIView+Appearance.swift */,
+				EE7134BE21EB956E007D7F51 /* UIFont+Custom.swift */,
+				EE7134C021EB9590007D7F51 /* UIColor+Custom.swift */,
 			);
 			path = CustomSearchBar;
 			sourceTree = "<group>";
@@ -143,7 +149,9 @@
 			files = (
 				EECC6BCE21E0B40800A6ACEB /* ViewController.swift in Sources */,
 				EECC6BCC21E0B40800A6ACEB /* AppDelegate.swift in Sources */,
+				EE7134C121EB9590007D7F51 /* UIColor+Custom.swift in Sources */,
 				EE7134BD21EB743D007D7F51 /* UIView+Appearance.swift in Sources */,
+				EE7134BF21EB956E007D7F51 /* UIFont+Custom.swift in Sources */,
 				EECC6BDE21E0B44500A6ACEB /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
